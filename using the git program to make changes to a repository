@@ -1,0 +1,15 @@
+Today in class we learned how to modify a file in github using our unbuntu vmware work station using the git programing language 
+we first had to install git in order to complete what mr derrick wanted us to do
+we then verified who we were by using the ls or pwd command 
+we then had to create a new file on gethub as a test file 
+after we created a new file we then generated a classic token for that because we had to use it later in order to modif said file on git hub
+we then used the git command 
+then we had to make a github directory 
+then we navigated to the git hub directory that we just created 
+while in that directory we used this syntax git config --global user.email "occs.spatton@gmail.com" to sign in to git hub on our work station
+then we put in our user name using a similar syntax using username.name instead of user.email
+then we had to make a clone of the repository from git hub onto the work station 
+we then creatd a line in the file that we created inside of the directory 
+then we used the git add . command to make changes to the repository
+then we used the the git commit command to commit our changes 
+then we used the git push comand to finalize our changes 
