@@ -1,0 +1,22 @@
+today in class we learned about subnet masks and CIDR notations
+there are three classes of subnets for a range of ip addresses
+class A: the ip addresses range for this class is 1.0.0.0 - 126.255.255.255 and the default subnet mask for this range is 255.0.0.0
+class B: the ip addresses range for this class is 128.0.0.0 - 191.255.255.255 and the default subnet mask for this range is 255.255.0.0 i did include the ip address starting with 127 because any ip address starting with 127 is a loop back ip address
+clas C: the ip addresses range for this class is 192.0.0.0 - 223.255.255.255 and the default subnet forf this class is 255.255.255.0
+CIDR or classless inter-domain routing is a way allocate ip addresses to to a subnet and a shortcut to write the subnet mask
+we use this chart to better help us figure out what range of ip addresses we can use 
+128 192 224 240 248 252 254 255
+128  64  32  16  8   4   2   1
+ 2    4   8  16  32  64  128
+ /1   /2  /3 /4  /5  /6  /7  /8
+ /9  /10 /11 /12 /13/14 /15 /16
+ /17 /18 /19 /20 /21 /22 /23 /24
+ /25 /26 /27 /28 /29 /30 /31 /32
+using this chart we can find the netwotk ip address and the broadcast ip address for a range of ip addresses we can use and within that range of ip addresses we can any ip adress
+for example we want to find a gateway ip address for 192.168.1.111 /25 
+using the chart we know that /25 is under 2 and 128 the two tells us that there are two subnet families or ranges of ip addresses
+128 is how many addresses is in each range so the first family of ip addresses is 192.168.0 -192.168.1.127 and the second family of ip addresses is192.168.1.128 - 192.168.1.255
+so knowing that we are trying to find a gateway ip address for 192.168.1.111 we use the last number to figure out which family or range we are in 
+in this case we are the first family because the range is 192.168.1.0 - 192.168.1.127 since out ip address is 192.168.1.111 it is in the range of 192.168.1.0-192.168.1.127
+to find the default gateway ip address we have to use an ip address from the family we are and normally we would use the first or last useable ip address in that range
+so our gateway ip address would be 192.168.1.1 we dont use 192.168.1.0 becausee that is our network id we dont use 192.168.1.127 because that is our broadcast id
