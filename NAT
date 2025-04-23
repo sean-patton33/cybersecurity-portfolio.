@@ -1,0 +1,5 @@
+Today in clas we went over nating there are four different types of nating 
+static nat or snat which manually configuring a private ip address to a public ip address to get out on the internet
+dynamic nat or dnat whis basically first come first serve for private ip addresses to use the first avalibale public ip address to get out on the internet
+pat or port addressin translation is when you add a the port number you are sending traffic to at the end of an ip address
+and port forwarding which is pat in reverse
